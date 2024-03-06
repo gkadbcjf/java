@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>resources test</comment>
+<entry key="rentBook">
+	DELETE 
+	FROM LIBRARY 
+	WHERE TITLE = ?
+</entry>
+
+<entry key="returnBook">
+	INSERT INTO LIBRARY 
+	VALUES(?,?,?,?)
+</entry>
+
+<entry key="insertMember">
+	INSERT INTO LMEMBER(NAME,ID,PASSWORD) 
+	VALUES(?,?,?)
+</entry>
+
+<entry key="changePassword">
+	UPDATE LMEMBER 
+	SET PASSWORD = ? 
+	WHERE ID =?
+</entry>
+
+<entry key="changeName">
+	UPDATE LMEMBER 
+	SET NAME = ? 
+	WHERE ID = ?
+</entry>
+
+
+</properties>
